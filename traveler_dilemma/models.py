@@ -5,12 +5,12 @@ from otree.api import (
 import random
 
 doc = """
-Kaushik Basu's famous traveler's dilemma (
+El famoso dilema del viajero de Kaushik Basu(
 <a href="http://www.jstor.org/stable/2117865" target="_blank">
     AER 1994
 </a>).
-It is a 2-player game. The game is framed as a traveler's dilemma and intended
-for classroom/teaching use.
+Es un juego de 2 participantes. El juego se titula como el dilema del viajero y su intención es 
+para el uso de clase/enseñanza.
 """
 
 
@@ -67,7 +67,7 @@ class Player(BasePlayer):
     claim = models.CurrencyField(
         min=Constants.min_amount, max=Constants.max_amount,
         doc="""
-        Each player's claim
+        Reclamo de cada participante
         """
     )
 
