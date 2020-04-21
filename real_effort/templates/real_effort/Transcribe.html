@@ -2,14 +2,14 @@
 {% load otree %}
 
 {% block title %}
-    Transcription task {{ subsession.round_number }}/{{ Constants.num_rounds }}
+    Tarea de transcripción {{ subsession.round_number }}/{{ Constants.num_rounds }}
 {% endblock %}
 
 {% block content %}
 
     <p>
-        Please transcribe (copy) the text below into the input field.
-        Be exact and make sure to get all characters and spaces correct.
+        Transcriba (copie) el texto a continuación en el campo de entrada.
+        Sea exacto y asegúrese de obtener todos los caracteres y espacios correctos.
     </p>
 
 
@@ -24,17 +24,17 @@
     {% if debug %}
         <div class="card border-warning">
             <div class="card-body">
-            <h4>Explanation for researchers (shown in debug mode only)</h4>
+            <h4>Explicación para investigadores (se muestra solo en modo de depuración) </h4>
             <p>
-                You are playing in debug mode, so you can skip the manual
-                transcription
-                by clicking <a href="#" id="prefill">this link</a>
-                and clicking "next".
+                Usted está participando en modo de depuración, así que usted puede omitir el manual de 
+                transcripción
+                haciendo click <a href="#" id="prefill">en este link</a>
+                y haciendo click en "siguiente".
             </p>
 
             <p>
-                A subject can only advance to the next screen if the
-                transcription is {{ required_accuracy }}% accurate.
+                Un sujeto solo puede avanzar a la siguiente pantalla si la 
+                transcripción es {{ required_accuracy }}% precisa
             </p>
             </div>
         </div>
