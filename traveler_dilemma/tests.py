@@ -17,17 +17,17 @@ class PlayerBot(Bot):
         yield (pages.Introduction)
 
         if case == 'both_min':
-            yield (pages.Claim, {"claim": Constants.min_amount})
+            yield (pages.Claim, {"reclamo": Constants.min_amount})
             assert self.player.payoff == Constants.min_amount
         elif case == 'both_max':
-            yield (pages.Claim, {"claim": Constants.max_amount})
+            yield (pages.Claim, {"reclamo": Constants.max_amount})
             assert self.player.payoff == Constants.max_amount
         else:
             if self.player.id_in_group == 1:
-                yield (pages.Claim, {"claim": Constants.min_amount})
+                yield (pages.Claim, {"reclamo": Constants.min_amount})
                 assert self.player.payoff == Constants.min_amount + 2
             else:
-                yield (pages.Claim, {"claim": Constants.min_amount + 1})
+                yield (pages.Claim, {"reclamo": Constants.min_amount + 1})
                 assert self.player.payoff == Constants.min_amount - 2
 
         yield (pages.Results)
