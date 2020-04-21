@@ -4,33 +4,32 @@
     <div class="card-body">
 
     <h3>
-        Instructions
+        Instrucciones
     </h3>
 
     <p>
-        You have been randomly and anonymously paired with another participant.
-        Now please image the following scenario.
+        Usted ha sido emparejado de forma aleatoria y anónimamente con otro participante.
+        Ahora por favor imagine el siguiente escenario. 
     </p>
     <p>
-        You and another traveler (the other participant) just returned from a
-        remote island where both of you bought the same antiques.
-        Unfortunately, you discovered that your airline managed to smash the
-        antiques, as they always do. The airline manager assures you of
-        adequate compensation. Without knowing the true value of your antiques,
-        he offers you the following scheme. Both of you simultaneously and
-        independently make a claim for the value of your own antique (ranging
-        from {{ Constants.min_amount }} to {{ Constants.max_amount }}):
+        Usted y otro viajero (el otro participante) acaban de regresar de una isla 
+        remota donde los dos compraron las mismas antigüedades.
+        Desafortunadamente, usted descubre que su aerolínea ha destruido sus 
+        antigüedades, como siempre lo hacen. El gerente de la aerolínea le asegura una 
+        compensación adecuada. Sin saber el valor real de sus antigüedades, él le ofrece 
+        el siguiente esquema. Ambos de forma simultánea e independientemente deben hacer 
+        un reclamo por el valor de su antigüedades (ranging
+        desde {{ Constants.min_amount }} a {{ Constants.max_amount }}):
     </p>
     <ul>
         <li>
-            If both claim the same amount, then this amount will be paid to
-            both.
+            Si ambos reclaman la misma cantidad, entonces esta cantidad será pagada a ambos.
         </li>
         <li>
-            If you claim different amounts, then the lower amount will be paid
-            to both. Additionally, the one with lower claim will receive a
-            reward of {{ Constants.adjustment_abs }}; the one with higher claim will
-            receive a penalty of {{ Constants.adjustment_abs }}.
+            Si reclaman cantidades diferentes, entonces la cantidad menor será pagada a ambos.
+            Adicionalmente, el que tenga un reclamo menor recibirá una recompensa de  
+            {{ Constants.adjustment_abs }}; y el que tenga un reclamo mayor recibirá una penalidad de 
+            {{ Constants.adjustment_abs }}.
         </li>
     </ul>
 </div>
