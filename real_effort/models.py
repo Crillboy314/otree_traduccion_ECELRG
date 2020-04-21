@@ -5,16 +5,16 @@ from otree.api import (
 import random
 
 doc = """
-This is a task that requires real effort from participants.
-Subjects are shown two images of incomprehensible text.
-Subjects are required to transcribe (copy) the text into a text entry field.
-The quality of a subject's transcription is measured by the
-<a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein distance</a>.
+Esta es una tarea que requiere de un esfuerzo real de los participantes. 
+A los sujetos se les muestran dos imágenes de texto incomprensible.
+Los sujetos deben transcribir (copiar) el texto en un campo de entrada de texto.
+La calidad de la transcripción del sujeto es medido por la
+<a href="http://en.wikipedia.org/wiki/Levenshtein_distance">distancia de Levenshtein</a>.
 """
 
 
 def levenshtein(a, b):
-    """Calculates the Levenshtein distance between a and b."""
+    """Calcula la distancia de Levenshtein entre a y b."""
     n, m = len(a), len(b)
     if n > m:
         # Make sure n <= m, to use O(min(n,m)) space
@@ -46,7 +46,7 @@ class Constants(BaseConstants):
     players_per_group = None
 
     reference_texts = [
-        "Revealed preference",
+        "Preferencia revelada",
         "Hex ton satoha egavecen. Loh ta receso minenes da linoyiy xese coreliet ocotine! Senuh asud tu bubo tixorut sola, bo ipacape le rorisin lesiku etutale saseriec niyacin ponim na. Ri arariye senayi esoced behin? Tefid oveve duk mosar rototo buc: Leseri binin nolelar sise etolegus ibosa farare. Desac eno titeda res vab no mes!",
     ]
 
