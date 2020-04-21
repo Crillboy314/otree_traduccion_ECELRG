@@ -2,32 +2,32 @@
 {% load otree %}
 
 {% block title %}
-    Summary
+    Resumen
 {% endblock %}
 
 {% block content %}
 
     <p class="text-success">
-        The table below shows some statistics for the transcriptions you have entered. 
-        In a real study this table would usually not be shown to subjects.
+        La siguiente tabla muestra algunas estadísticas de las transcripciones que ha ingresado. 
+        En un estudio real, esta tabla generalmente no se mostraría a los sujetos.
         <br>
-        The <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">Levenshtein</a> distance is given in the last column.
-        Note that the difference between the length of the given text and the length of
-        the text entered is a lower bound on the Levenshtein distance.
+        La <a href="http://en.wikipedia.org/wiki/Levenshtein_distance"> distancia de Levenshtein</a> se encuentra en la última columna.
+        Tenga encuenta que la diferencia entre la longitud del texto dado y la longitud del texto ingresado es
+        un límite inferior de la distancia de Levenshtein.
     </p>
 
     <div class="panel panel-success">
 
         <div class="panel-heading">
-                Statistics for transcriptions
+                Estadísticas para transcripciones
         </div>
 
         <table class="table">
             <tr>
-                <th>Transcription #</th>
-                <th>Length of given text</th>
-                <th>Length of text entered</th>
-                <th>Levenshtein distance</th>
+                <th>Transcripción #</th>
+                <th>Longitud del texto dado</th>
+                <th>Logitud del texto ingresado</th>
+                <th>Distancia de Levenshtein</th>
             </tr>
             {% for row in table_rows %}
             <tr>
