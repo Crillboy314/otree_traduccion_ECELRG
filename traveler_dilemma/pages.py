@@ -4,14 +4,14 @@ from .models import Constants
 
 
 
-class Introduction(Page):
+class Introducción(Page):
     pass
 
 
-class Claim(Page):
+class Reclamo(Page):
 
-    form_model = 'player'
-    form_fields = ['claim']
+    form_model = 'participante'
+    form_fields = ['reclamo']
 
 
 class ResultsWaitPage(WaitPage):
@@ -20,7 +20,7 @@ class ResultsWaitPage(WaitPage):
         self.group.set_payoffs()
 
 
-class Results(Page):
+class Resultados(Page):
     def vars_for_template(self):
         return {
             'other_player_claim': self.player.other_player().claim
