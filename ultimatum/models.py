@@ -5,10 +5,10 @@ from otree.api import (
 import random
 
 doc = """
-Ultimatum game with two treatments: direct response and strategy method.
-In the former, one player makes an offer and the other either accepts or rejects.
-It comes in two flavors, with and without hypothetical questions about the second player's response to offers other than the one that is made.
-In the latter treatment, the second player is given a list of all possible offers, and is asked which ones to accept or reject.
+El juego del Ultimatum con dos tratamientos: respuesta directa y método de estrategia.
+En el primero, un jugador hace una oferta y el otro acepta o rechaza.
+It comes in two flavors, con y sin preguntas hipotéticas sobre la respuesta del segundo participante a ofertas distintas a de las que se hace. 
+En el último tratamiento, el segundo participante recibe una lista de todas las posibles ofertas, y se le pregunta cuáles acepta o rechaza.
 """
 
 
@@ -44,18 +44,18 @@ class Subsession(BaseSubsession):
 def make_field(amount):
     return models.BooleanField(
         widget=widgets.RadioSelectHorizontal,
-        label='Would you accept an offer of {}?'.format(c(amount)))
+        label='¿Usted aceptaría una oferta de {}?'.format(c(amount)))
 
 
 class Group(BaseGroup):
     use_strategy_method = models.BooleanField(
-        doc="""Whether this group uses strategy method"""
+        doc="""Si este grupo usa el método de estrategia"""
     )
 
     amount_offered = models.CurrencyField(choices=Constants.offer_choices)
 
     offer_accepted = models.BooleanField(
-        doc="if offered amount is accepted (direct response method)"
+        doc="si la cantidad ofertada es aceptada (método de respuesta directa)"
     )
 
     # for strategy method, see the make_field function above
