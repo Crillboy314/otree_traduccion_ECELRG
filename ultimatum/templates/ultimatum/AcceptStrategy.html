@@ -2,23 +2,23 @@
 {% load otree %}
 
 {% block title %}
-    Your role and decision
+    Su rol y decisión
 {% endblock %}
 
 {% block content %}
 
     <p>
-        You are the <strong>responder</strong>.
+        Usted es el <strong>responderor</strong>.
     </p>
 
     <p>
-        The proposer will make you an offer on how to divide
-        the {{ Constants.endowment }}.
+        El proponente le hará una oferta sobre cómo dividir 
+        el {{ Constants.endowment }}.
     </p>
 
     <p>
-        Please choose below how you would respond to each of the possible
-        offers.
+        Elija a continuación cómo respondería a cada una de las posibles
+        ofertas.
     </p>
 
     {% for field in form %}
