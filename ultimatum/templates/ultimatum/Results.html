@@ -2,30 +2,30 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 {% block content %}
     <p>
         {% if player.id_in_group == 1 %}
-            You were given {{ Constants.endowment }}, out of which you offered {{ group.amount_offered }} to the other player.
+           Le dieron {{ Constants.endowment }}, de los cuales ofreció {{ group.amount_offered }} al otro participante.
             {% if group.offer_accepted %}
-                Your offer was accepted.
+                Su oferta fue aceptada.
             {% else %}
-                 Your offer was rejected.
+                 Su oferta fue rechazada.
             {% endif %}
         {% else %}
-            The other player offered you {{ group.amount_offered }} out of the total {{ Constants.endowment }}.
+            El otro participante le ha ofrecido {{ group.amount_offered }} fuera del total {{ Constants.endowment }}.
             {% if group.offer_accepted %}
-                You accepted this offer.
+                Usted acepta esta oferta.
             {% else %}
-                You rejected this offer.
+                Usted rechaza esta oferta.
             {% endif %}
         {% endif %}
     </p>
 
     <p>
-        Your payoff is therefore {{ player.payoff }}.
+        Su pago es por lo tanto {{ player.payoff }}.
     </p>
 
     {% next_button %}
