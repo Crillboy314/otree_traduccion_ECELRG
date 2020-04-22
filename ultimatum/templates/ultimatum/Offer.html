@@ -2,19 +2,19 @@
 {% load otree %}
 
 {% block title %}
-        Your role and decision
+        Su rol y decisión 
 {% endblock %}
 
 {% block content %}
     <p>
-            You are the <strong>proposer</strong>.
+            Usted es el <strong>proponente</strong>.
     </p>
 
     <p>
-            The two of you have been given {{ Constants.endowment }}. Enter the amount that you want to offer to the responder.
+            Ustedes dos han recibido{{ Constants.endowment }}. Ingrese la cantidad que usted quiere ofrecerle al respondedor.
     </p>
 
-    {% formfield group.amount_offered label="How much would you like to offer?" %}
+    {% formfield group.amount_offered label="¿Cuánto le gustaría ofrecer?" %}
 
     {% next_button %}
 
