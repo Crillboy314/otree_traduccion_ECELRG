@@ -28,9 +28,9 @@ class Transcribe(Page):
             self.player.levenshtein_distance = distance
         else:
             if allowed_error_rate == 0:
-                return "The transcription should be exactly the same as on the image."
+                return "La transcripción debe ser exactamente la misma que en la imagen."
             else:
-                return "This transcription appears to contain too many errors."
+                return "Su transcripción parece contener demasiados errores."
 
     def before_next_page(self):
         self.player.payoff = 0
