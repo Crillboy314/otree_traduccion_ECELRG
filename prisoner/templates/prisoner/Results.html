@@ -2,21 +2,21 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 {% block content %}
 
     <p>
         {% if same_choice %}
-            Both of you chose to {{ my_decision }}.
+            Ambos decidieron {{ my_decision }}.
         {% else %}
-            You chose to {{ my_decision }} and the other participant chose to {{ opponent_decision }}.
+            Usted elegió {{ my_decision }} y el otro participante elegió {{ opponent_decision }}.
         {% endif %}
     </p>
 
     <p>
-        As a result, you earned {{ player.payoff }}.
+        Como resultado, usted ganó {{ player.payoff }}.
     </p>
 
     {% next_button %}
