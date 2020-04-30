@@ -7,7 +7,7 @@ import random
 doc = """
 El juego del Ultimatum con dos tratamientos: respuesta directa y método de estrategia.
 En el primero, un jugador hace una oferta y el otro acepta o rechaza.
-It comes in two flavors, con y sin preguntas hipotéticas sobre la respuesta del segundo participante a ofertas distintas a de las que se hace. 
+Viene en dos versiones: con y sin preguntas hipotéticas sobre la respuesta del segundo participante a ofertas distintas a de las que se hace. 
 En el último tratamiento, el segundo participante recibe una lista de todas las posibles ofertas, y se le pregunta cuáles acepta o rechaza.
 """
 
