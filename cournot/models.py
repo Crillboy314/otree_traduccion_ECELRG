@@ -5,9 +5,9 @@ from otree.api import (
 import random
 
 doc = """
-In Cournot competition, firms simultaneously decide the units of products to
-manufacture. The unit selling price depends on the total units produced. In
-this implementation, there are 2 firms competing for 1 period.
+En competencia de Cournot, las firmas deciden simultaneamente las unidades de productos
+para la fabricación. El precio unitario de venta depende en el total de unidades producidas. En 
+esta implementación, existen 2 firmas compitiendo por 1 período.
 """
 
 
@@ -31,7 +31,7 @@ class Group(BaseGroup):
     unit_price = models.CurrencyField()
 
     total_units = models.IntegerField(
-        doc="""Total units produced by all players"""
+        doc="""Total de unidades producidas por los participantes"""
     )
 
     def set_payoffs(self):
@@ -46,7 +46,7 @@ class Player(BasePlayer):
 
     units = models.IntegerField(
         min=0, max=Constants.max_units_per_player,
-        doc="""Quantity of units to produce"""
+        doc="""Cantidad de unidades a producir"""
     )
 
     def other_player(self):
