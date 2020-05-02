@@ -6,8 +6,7 @@ import random
 
 
 doc = """
-This is a standard 2-player trust game where the amount sent by player 1 gets
-tripled. The trust game was first proposed by
+Este es un juego de confianza estándar de dos participantes en el que la cantidad enviada por el participante uno se triplica. El juego de confianza fue presentado por primera vez por
 <a href="http://econweb.ucsd.edu/~jandreon/Econ264/papers/Berg%20et%20al%20GEB%201995.pdf" target="_blank">
     Berg, Dickhaut, and McCabe (1995)
 </a>.
