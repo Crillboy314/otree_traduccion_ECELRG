@@ -2,15 +2,15 @@
 {% load otree %}
 
 {% block title %}
-    Your Choice
+    Su decisión
 {% endblock %}
 
 {% block content %}
 <p>
-    You are Participant B.
-    Participant A sent you {{group.sent_amount}} and you received {{tripled_amount}}.
-    Now you have {{tripled_amount}}.
-    How much will you send to participant A?
+    Usted es el participante B.
+    El participante A le envia {{group.sent_amount}} y usted recibe {{tripled_amount}}.
+    Ahora usted tiene {{tripled_amount}}.
+    Cuál será la cantidad que le enviará al particpante A?
 </p>
 
     {% formfield group.sent_back_amount label=prompt %}
