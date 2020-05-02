@@ -2,7 +2,7 @@
 {% load otree %}
 
 {% block title %}
-    Trust Game: Your Choice
+    Juego de Confianza: Su decisión
 {% endblock %}
 
 {% block content %}
@@ -10,7 +10,7 @@
     {% include Constants.instructions_template %}
 
 <p>
-You are Participant B. Participant A sent you {{group.sent_amount}} and you received {{tripled_amount}}.
+Usted es el participante B. El participante A le envia  {{group.sent_amount}} and you received {{tripled_amount}}.
 </p>
 
     {% formfield group.sent_back_amount label="How much do you want to send back?" %}
