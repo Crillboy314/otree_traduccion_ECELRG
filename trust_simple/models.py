@@ -6,7 +6,7 @@ import random
 
 
 doc = """
-Simple trust game
+Juego de confianza simple
 """
 
 
@@ -28,11 +28,11 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     sent_amount = models.CurrencyField(
         choices=currency_range(0, Constants.endowment, c(1)),
-        doc="""Amount sent by P1""",
+        doc="""Cantidad enviada por P1""",
     )
 
     sent_back_amount = models.CurrencyField(
-        doc="""Amount sent back by P2""",
+        doc="""Cantidad enviada de vuelta por P2""",
     )
 
 
