@@ -2,13 +2,13 @@
 {% load otree %}
 
 {% block title %}
-    Your Choice
+    Su decisión
 {% endblock %}
 
 {% block content %}
 
     <p>
-    You are Participant A. Now you have {{Constants.endowment}}. How much will you send to participant B?
+    Usted es el particpante A . Ahora usted tiene {{Constants.endowment}}. Cuál será la cantidad que le enviará al participante B?
     </p>
 
     {% formfield group.sent_amount label="Please enter an amount from 0 to 100:" %}
