@@ -8,10 +8,10 @@ class Introduction(Page):
 
 
 class Send(Page):
-    """This page is only for P1
-    P1 sends amount (all, some, or none) to P2
-    This amount is tripled by experimenter,
-    i.e if sent amount by P1 is 5, amount received by P2 is 15"""
+    """Esta página es solo para P1
+    P1 envia la cantidad (todo, algo, o nada) a P2
+    Esta cantidad es triplicada por el experimentador,
+    es decir, si la cantidad enviada por P1 es 5, la cantidad recibida por P2 es 15"""
 
     form_model = 'group'
     form_fields = ['sent_amount']
@@ -25,8 +25,8 @@ class SendBackWaitPage(WaitPage):
 
 
 class SendBack(Page):
-    """This page is only for P2
-    P2 sends back some amount (of the tripled amount received) to P1"""
+    """Esta página es solo para P2
+    P2 envia de vuelta algo de la cantidad (de la cantidad recibida triplicada) a P1"""
 
     form_model = 'group'
     form_fields = ['sent_back_amount']
@@ -51,7 +51,7 @@ class ResultsWaitPage(WaitPage):
 
 
 class Results(Page):
-    """This page displays the earnings of each player"""
+    """Esta página muestra las ganacias de cada jugador"""
 
     def vars_for_template(self):
         return {
