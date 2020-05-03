@@ -5,9 +5,9 @@ from otree.api import (
 
 
 doc = """
-This is a one-shot "Prisoner's Dilemma". Two players are asked separately
-whether they want to cooperate or defect. Their choices directly determine the
-payoffs.
+Este es un "Dilema del Prisionero" de una sola vez. Dos jugadores son preguntados por separado
+si quieren cooperar o desertar. Sus elecciones determinan directamente sus
+pagos.
 """
 
 
