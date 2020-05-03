@@ -5,7 +5,7 @@ from otree.api import (
 
 
 doc = """
-Este es un "Dilema del Prisionero" de una sola vez. Dos jugadores son preguntados por separado
+Este es un "Dilema del Prisionero" de una sola vez. Dos participantes son preguntados por separado
 si quieren cooperar o desertar. Sus elecciones determinan directamente sus
 pagos.
 """
