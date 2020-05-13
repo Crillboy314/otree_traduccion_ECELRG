@@ -15,51 +15,51 @@
         </p>
 
         <p>
-            Los dos participantes en una pareja tendrán dos roles diferentes: el
-            <strong>proponente</strong> y el <strong>respondedor</strong>.
+            Los dos participantes forman un par y tendrán dos roles diferentes: el
+            <strong>que propone</strong> y quien <strong>decide sobre la propuesta</strong>.
             Usted será asignado aleatoriamente a un rol, y se mostrará en la página siguiente.
         </p>
 
         <p>
-            Los dos recibirán juntos {{ Constants.endowment }}. El 
+            Los dos recibirán en conjunto {{ Constants.endowment }}. El 
             experimento trata de cómo dividir esta cantidad. 
-            El proponente le hará al respondedor una oferta de tómalo o déjalo,
-            en donde el respondedor debe aceptar o rechazar.
+            El que propone le hará al otro individuo una oferta de tómalo o déjalo,
+            en donde deberá aceptar o rechazar.
             Si la oferta es rechazada, ambos recibirán
             {{ Constants.payoff_if_rejected }}.
 
         </p>
 
         <h4 class="panel-sub-heading">
-            Rol del proponente
+            Rol del que propone
         </h4>
 
         <p>
-            El proponedor tiene las siguientes {{ Constants.offer_choices_count }}
+            El que propone tiene las siguientes {{ Constants.offer_choices_count }}
             opciones en cómo dividir los {{ Constants.endowment }} entre los dos participantes.
         </p>
 
         <ol>
             {% for give, keep in Constants.keep_give_amounts %}
 
-                <li>{{ give }} para el respondedor (the proposer keeps {{ keep }})</li>
+                <li>{{ give }} para el que decide sobre la propuesta (the proposer keeps {{ keep }})</li>
 
             {% endfor %}
         </ol>
 
         <h4 class="panel-sub-heading">
-            Rol del respondedor
+            Rol del que decide sobre la propuesta
         </h4>
 
         <p>
             {% if not group.use_strategy_method %}
-                El respondedor puede aceptar o rechazar la oferta.
+                El que decide sobre la propuesta puede aceptar o rechazar la oferta.
             {% else %}
-                Mientras el proponente hace la oferta, el respondedor puede elejir que
-                {{ Constants.offer_choices_count }} ofertas se indicaron anteriormente 
+                Mientras el que propone hace la oferta, el que decide sobre la propuesta puede elejir que
+                {{ Constants.offer_choices_count }}, ofertas que se indicaron anteriormente 
                 para aceptar o rechazar. 
-                Después que el proponente ha hecho la oferta, esta será aceptada o rechazada 
-                según las elecciones del respondedor.
+                Después que el que propone ha hecho la oferta, esta será aceptada o rechazada 
+                según las elecciones del otro participante.
             {% endif %}
         </p>
 
