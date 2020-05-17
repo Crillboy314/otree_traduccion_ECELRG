@@ -6,7 +6,7 @@ import random
 
 
 class Constants(BaseConstants):
-    name_in_url = 'survey'
+    name_in_url = 'encuesta'
     players_per_group = None
     num_rounds = 1
 
@@ -22,33 +22,33 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     age = models.IntegerField(
-        label='What is your age?',
+        label='¿Cuántos años tiene?',
         min=13, max=125)
 
     gender = models.StringField(
-        choices=['Male', 'Female', 'Other'],
-        label='What is your gender?',
+        choices=['Masculino', 'Femenino', 'Otro'],
+        label='¿Cuál es su género?',
         widget=widgets.RadioSelect)
 
     crt_bat = models.IntegerField(
         label='''
-        A bat and a ball cost 22 dollars in total.
-        The bat costs 20 dollars more than the ball.
-        How many dollars does the ball cost?'''
+        Un bate y una pelota cuestan 22 dólares en total.
+        El bate cuesta 20 dólares más que la pelota.
+        ¿Cuántos dólares cuesta la pelota?'''
     )
 
     crt_widget = models.IntegerField(
         label='''
-        "If it takes 5 machines 5 minutes to make 5 widgets,
-        how many minutes would it take 100 machines to make 100 widgets?"
+        "Si 5 máquinas en 5 minutos pueden hacer 5 dispositivos,
+        ¿Cuántos minutos tomaría a 100 máquinas hacer 100 dispositivos?"
         '''
     )
 
     crt_lake = models.IntegerField(
         label='''
-        In a lake, there is a patch of lily pads.
-        Every day, the patch doubles in size.
-        If it takes 48 days for the patch to cover the entire lake,
-        how many days would it take for the patch to cover half of the lake?
+        En un lago, hay una superficie cubierta de nenúfares.
+        Todos los días, esa extensión dobla su tamaño.
+        Si tarda 48 días en cubrir todo el lago,
+        ¿Cuántos días le tomaría cubrir la mitad del lago?
         '''
     )
