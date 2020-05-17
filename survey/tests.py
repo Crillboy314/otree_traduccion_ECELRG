@@ -9,8 +9,8 @@ class PlayerBot(Bot):
     def play_round(self):
 
         yield (pages.Demographics, {
-            'age': 24,
-            'gender': 'Male'})
+            'edad': 24,
+            'género': 'Masculino'})
 
         yield (pages.CognitiveReflectionTest, {
             'crt_bat': 10,
