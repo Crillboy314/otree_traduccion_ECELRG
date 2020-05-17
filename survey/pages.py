@@ -5,13 +5,13 @@ from .models import Constants
 
 
 class Demographics(Page):
-    form_model = 'player'
-    form_fields = ['age',
-                   'gender']
+    form_model = 'participante'
+    form_fields = ['edad',
+                   'género']
 
 
 class CognitiveReflectionTest(Page):
-    form_model = 'player'
+    form_model = 'participante'
     form_fields = ['crt_bat',
                    'crt_widget',
                    'crt_lake']
