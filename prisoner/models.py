@@ -12,7 +12,7 @@ pagos.
 
 
 class Constants(BaseConstants):
-    name_in_url = 'prisoner'
+    name_in_url = 'prisionero'
     players_per_group = 2
     num_rounds = 1
 
@@ -37,8 +37,8 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     decision = models.StringField(
-        choices=['Cooperate', 'Defect'],
-        doc="""This player's decision""",
+        choices=['Cooperar', 'Desertar'],
+        doc="""Decisión de este jugador""",
         widget=widgets.RadioSelect
     )
 
@@ -48,15 +48,15 @@ class Player(BasePlayer):
     def set_payoff(self):
 
         payoff_matrix = {
-            'Cooperate':
+            'Cooperar':
                 {
-                    'Cooperate': Constants.both_cooperate_payoff,
-                    'Defect': Constants.betrayed_payoff
+                    'Cooperar': Constants.both_cooperate_payoff,
+                    'Desertar': Constants.betrayed_payoff
                 },
-            'Defect':
+            'Desertar':
                 {
-                    'Cooperate': Constants.betray_payoff,
-                    'Defect': Constants.both_defect_payoff
+                    'Cooperar': Constants.betray_payoff,
+                    'Desertar': Constants.both_defect_payoff
                 }
         }
 
