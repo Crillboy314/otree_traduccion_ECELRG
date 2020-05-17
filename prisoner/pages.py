@@ -8,8 +8,8 @@ class Introduction(Page):
 
 
 class Decision(Page):
-    form_model = 'player'
-    form_fields = ['decision']
+    form_model = 'participante'
+    form_fields = ['decisión']
 
 
 class ResultsWaitPage(WaitPage):
