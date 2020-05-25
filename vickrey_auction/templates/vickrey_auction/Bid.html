@@ -2,7 +2,7 @@
 {% load otree %}
 
 {% block title %}
-    Bid
+    Oferta
 {% endblock %}
 
 {% block styles %}
@@ -24,18 +24,18 @@
 {% block content %}
 
     <p>
-        The value of the object to you is <strong>{{ player.private_value }}</strong>.
-        If you win the auction, you would have a payoff of
-        <strong>{{ endowment_plus_private_value }} - second highest bid</strong>.
+        El valor de los objetos para usted es <strong>{{ player.private_value }}</strong>.
+        Si usted gana la subasta, tendría un pago de 
+        <strong>{{ endowment_plus_private_value }} - la segunda oferta más alta</strong>.
     </p>
 
     <div class="form-group required">
         <label class="control-label" for="id_bid_amount">
-            Please submit a bid for the object (from 0 to {{ Constants.endowment }}):</label>
+            Por favor ingrese una oferta para el objeto (de 0 a {{ Constants.endowment }}):</label>
         <div class="controls">
             <input type="hidden" name="bid_amount" id="id_bid_amount" value="0">
             <div class="bid-slider"></div>
-            <div class="bid">Your bid: <strong><span class="bid-value"></span></strong></div>
+            <div class="bid">Su oferta: <strong><span class="bid-value"></span></strong></div>
         </div>
     </div>
 

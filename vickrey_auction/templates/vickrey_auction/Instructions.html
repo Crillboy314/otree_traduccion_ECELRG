@@ -4,35 +4,36 @@
     <div class="card-body">
 
     <h3>
-        Instructions
+        Instrucciones
     </h3>
 
     <p>
-        You have been randomly and anonymously matched with 2 other
-        participants in an auction. Each of you is given {{ Constants.endowment }} to start.
+        Usted ha sido emparejado de forma aleatoria y anónimamente con otros 2 
+        participantes en una subasta. Cada uno de ustedes recibe {{ Constants.endowment }} para comenzar.
     </p>
     <p>
-        Before bidding, you will learn the value of the object to you.
-        The value of the object differs from participant to participant and is
-        randomly and independently drawn from 0 to {{ Constants.endowment }} for each participant.
+        Antes de realizar una oferta, va a conocer el valor del objeto para usted.
+        EL valor de los objetos difiere entre participantes, es asignado de forma aleatoria e independiente
+        con valores de 0 a {{ Constants.endowment }} para cada participante.
     </p>
     <p>
-        Next, you will privately submit a bid for the object.
-        You can bid from 0 to {{ Constants.endowment }}.
-        The participant with the highest bid wins the object and pays the second highest bid.
-        In the event of a die, the winner will be chosen randomly
-        will select the winner in the event of a tie bid and the winner will
-        pay the highest bid other than her or his own bid.
+        
+        A continuación, presentará una oferta privada para el objeto.
+        Usted puede ofertar de 0 a  {{ Constants.endowment }}.
+        El participante con la oferta más alta gana el objeto and paga la cantidad de la segunda oferta más alta.
+        Si existe un empate, el ganador será escogido de forma aleatoria y deberá pagar 
+        la oferta más alta distinta a la suya. 
+  
     </p>
     <p>
-        The payoff of the winner is calculated as<br/>
+        EL pago del ganador es calculado de la siguiente manera:<br/>
         <strong>
-            Winner’s payoff = {{ Constants.endowment }} + Private value of the object to the winner - Second highest bid
+            Pago del ganador = {{ Constants.endowment }} + Valor privado del objeto para el ganador - Segunda oferta más alta
         </strong><br/>
-        The payoffs for others are the initial {{ Constants.endowment }}.
+        Los pagos de los otros participantes, es el inicial {{ Constants.endowment }}.
     </p>
     <p>
-        For your convenience, these instructions will remain available to you on all subsequent screens of this study.
+        Para su conveniencia, las instrucciones permanecerán disponibles para usted en todas las pantallas posteriores de este estudio.
     </p>
     </div>
 </div>
