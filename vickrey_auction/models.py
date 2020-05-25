@@ -6,11 +6,11 @@ import random
 
 
 doc = """
-In this Vickrey auction, 3 players bid for an object with private values. Each
-player can only submit one bid.
+En esta subasta Vickrey, 3 participantes ofertan para in objeto con valores en privado. Cada
+participante puede solo ingresar una oferta.
 
 See: Vickrey, William. "Counterspeculation, auctions, and competitive '
-sealed tenders." The Journal of finance 16.1 (1961): 8-37.
+sealed tenders.." The Journal of finance 16.1 (1961): 8-37.
 """
 
 
@@ -54,15 +54,15 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     private_value = models.CurrencyField(
-        doc="How much the player values the item, generated randomly"
+        doc="CUánto valora el participante el objeto, generado aleatoriamente"
     )
 
     bid_amount = models.CurrencyField(
         min=0, max=Constants.endowment,
-        doc="Amount bidded by the player"
+        doc="Cantidad ofertada por el participanter"
     )
 
     is_winner = models.BooleanField(
         initial=False,
-        doc="""Indicates whether the player is the winner"""
+        doc="""Indica si el participante es el ganador"""
     )
