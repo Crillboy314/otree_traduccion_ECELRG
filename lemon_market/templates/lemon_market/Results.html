@@ -2,38 +2,39 @@
 {% load otree %}
 
 {% block title %}
-    Results (Period {{ subsession.round_number }} of {{ Constants.num_rounds }}
+    Resultados (Periodo {{ subsession.round_number }} de {{ Constants.num_rounds }}
     )
 {% endblock %}
 
 
 {% block content %}
     <p>
-        You are {{ player.role }}.
+        Usted es el {{ player.role }}.
         {% if group.seller_id == 0 %}
             {% if player.role == 'buyer' %}
-                You bought nothing in this period.
+                Usted no ha comprado nada en este periodo.
             {% else %}
-                The buyer bought nothing in this period.
+                El comprador no ha comprado nada en este periodo. 
             {% endif %}
         {% else %}
             {% if player.role == 'buyer' %}
                 You bought from seller {{ group.seller_id }}
                 at a price of {{ group.sale_price }}.
-                The quality grade of your purchase is {{ group.sale_quality }}.
+                El grado de calidad comprado es  {{ group.sale_quality }}.
             {% else %}
-                The buyer purchased a {{ group.sale_quality }}
-                grade from
+                El comprador ha comprado un grado de calidad {{ group.sale_quality }}
+                de
                     {% if player.id_in_group == group.seller_id %}
-                        you
+                        usted
                     {% else %}
-                        seller {{ group.seller_id }}
+                        vendedor {{ group.seller_id }}
                     {% endif %}
-                at a price of {{ group.sale_price }}.
+                a un precio de {{ group.sale_price }}.
             {% endif %}
         {% endif %}
 
-        Thus your period payoff is <strong>{{ player.payoff }}</strong>.
+        
+        Por lo tanto, su período de pago es <strong>{{ player.payoff }}</strong>.
     </p>
 
     {% next_button %}

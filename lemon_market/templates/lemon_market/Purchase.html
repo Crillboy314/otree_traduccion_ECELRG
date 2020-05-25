@@ -2,16 +2,16 @@
 {% load otree %}
 
 {% block title %}
-    Purchase (Period {{ subsession.round_number }} of {{ Constants.num_rounds }})
+    Compra (Periodo {{ subsession.round_number }} de {{ Constants.num_rounds }})
 {% endblock %}
 
 {% block content %}
-<p>You are buyer.</p>
+<p>Usted es el comprador.</p>
 <p>
-    <strong>Below are the listed prices from the sellers:</strong><br/>
+    <strong>A continuación se encuentra enlistado los precios propuestos por los vendedores:</strong><br/>
     {% for p in group.get_players %}
     {% if 'seller' in p.role %}
-    <i>Price from {{p.role}}: {{p.seller_proposed_price}}</i><br/>
+    <i>Precio de {{p.role}}: {{p.seller_proposed_price}}</i><br/>
     {% endif %}
     {% endfor %}
 </p>
