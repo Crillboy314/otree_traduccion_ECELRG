@@ -1,16 +1,16 @@
 {% extends "global/Page.html" %}
 {% load otree %}
 
-{% block title %}Your Decision{% endblock %}
+{% block title %}Su decisión{% endblock %}
 
 {% block content %}
 <p>
-    You are <strong>Participant 1</strong>.
-    Please decide how much of the {{ Constants.endowment }}
-    you will keep for yourself.
+    Usted es<strong>Participante 1</strong>.
+    Por favor decida qué cantidad de {{ Constants.endowment }}
+    conservará para usted.
 </p>
 
-{% formfield group.kept label="I will keep" %}
+{% formfield group.kept label="Yo mantendré" %}
 
 {% next_button %}
 
