@@ -4,46 +4,46 @@
     <div class="card-body">
 
     <h3>
-        Instructions
+        Instrucciones
     </h3>
 
     <p>
-        In this study, you will be grouped randomly and anonymously with
-        another 2 participants. One of you will be randomly assigned to be the
-        buyer and the other 2 the sellers. Sellers and the buyer can trade for
-        {{ Constants.num_rounds }} periods. Prior to making any decision, you will learn your role,
-        which will remain unchanged for all periods.
+        En este estudio, usted será agrupado de forma aleatoria y anínoma con 
+        otros 2 participantes. Uno de ustedes, será asignado aleatoriamente para ser el comprador
+        y los otros dos restantes serán los vendedores. Los vendedores y compradores pueden negociar por 
+        {{ Constants.num_rounds }} periodos. Antes de tomar cualquier decisión, usted aprenderá su función, 
+        misma que se mantendrá durante todos los periodos.
     </p>
     <p>
-        At the beginning of each period, each of you will receive {{ Constants.initial_endowment }}.
-        The sellers will begin by privately choosing a <strong>price</strong>
-        (from 0 to {{ Constants.initial_endowment }}) and a <strong>quality grade</strong> for their products.
-        Then the buyer will have the chance to purchase from one of the sellers
-        at the price listed. Before purchase, the buyer will not observe
-        grades. After purchase, the price and grade of the bought unit will be
-        revealed to all. The grade can be <strong>high, medium, or
-        low;</strong> higher grade costs more to produce and is worth more to
-        the buyer. The table below shows production costs to the sellers and
-        values to the buyer of different grades:
+        Al inicio de cada periodo, cada uno de ustedes recibirá {{ Constants.initial_endowment }}.
+        Los vendedores comenzarán eligiendo en privado un <strong>precio</strong>
+        (de 0 a {{ Constants.initial_endowment }}) y un  <strong>grado de calidad</strong> para sus productos.
+        Luego el comprador tendrá la oportunidad de comprar a uno de los vendedores
+        al precio listado. Antes de la compra, el comprador no observará los grados de calidad. 
+        Después de la compra, el precio y los grados de calidad del producto comprado, se revelará 
+        para todos. El grado de calidad puede ser <strong>alto, medio o bajo
+        </strong> un grado más alto, implica un costo mayor para producirlo, por ende, le cuesta más al comprador. 
+        La tabla a continuación muestra el costo de producción a los vendedores y 
+        los valores a los compradores para los diferentes grados de calidad:
     </p>
     <table class=table>
         <thead>
         <tr>
-            <th>Grade</th>
-            <th>High</th>
-            <th>Medium</th>
-            <th>Low</th>
+            <th>Grado de calidad</th>
+            <th>Alto</th>
+            <th>Medio</th>
+            <th>Bajo</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th>Production Cost to Sellers</th>
+            <th>Costo de producción para los vendedores</th>
             <td>30</td>
             <td>20</td>
             <td>10</td>
         </tr>
         <tr>
-            <th>Value to the Buyer</th>
+            <th>Valor para los compradores</th>
             <td>35</td>
             <td>25</td>
             <td>15</td>
@@ -51,21 +51,22 @@
         </tbody>
     </table>
     <p>
-        The buyer can buy up to 1 unit of the commodity during a period and
-        each seller can produce up to 1 unit in a period. <strong>Unsold units
-        are not produced and hence incur no cost.</strong>
+        El comprador puede comprar  hasta una unidad del producto durante un periodo
+        y cada vendedor puede producir hasta una unidad en un periodo. <strong>Las unidades no vendidas
+        no se producen y, por lo tanto, no tienen costo.</strong>
     </p>
     <p>
-        The period payoff for the buyer is:<br/>
+        El periodo de pago para el comprador es:<br/>
         <strong>
-            Buyer's period payoff = {{ Constants.initial_endowment }} + value of the grade purchased -
-            seller's price
+            
+        Periodo de pago del comprador = {{ Constants.initial_endowment }} + valor del grado de calidad comprado  -
+            precio del vendedor
         </strong></p>
     <p>
-        The period payoff the sellers is:<br/>
+        El periodo de pago del vendedor es:<br/>
         <strong>
-            Seller's period payoff = {{ Constants.initial_endowment }} + seller's price - cost of the grade
-            produced
+            Periodo de pago del vendedor = {{ Constants.initial_endowment }} + precio del vendedor - costo del grado de calidad producido
+            
         </strong></p>
 </div>
 </div>
