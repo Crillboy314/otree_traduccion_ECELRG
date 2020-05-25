@@ -5,8 +5,8 @@ from otree.api import (
 import random
 
 doc = """
-Each player decides if to free ride or to volunteer from which all will
-benefit.
+Cada participante decide si es voluntario o no, del mismo todos se benefician.
+
 
 See: Diekmann, A. (1985). Volunteer's dilemma. Journal of Conflict
 Resolution, 605-610.
