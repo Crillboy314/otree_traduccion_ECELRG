@@ -2,12 +2,12 @@
 {% load otree %}
 
 {% block title %}
-Your Choice
+Su elección
 {% endblock %}
 
 {% block content %}
 
-    {% formfield player.volunteer label='Do you wish to volunteer?' %}
+    {% formfield player.volunteer label='¿Quiere ser voluntario?' %}
  <p>  {% next_button %}</p> 
 
     {% include Constants.instructions_template %}

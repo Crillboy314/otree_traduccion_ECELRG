@@ -2,20 +2,20 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 
 {% block content %}
     <p>
         {% if player.volunteer %}
-            You volunteered. As a result, your payoff is
+            Se ofreció de voluntario. Como resultado, su pago es de
             <strong>{{ player.payoff }}</strong>.
         {% elif group.num_volunteers > 0 %}
-            You did not volunteer but some did. As a result, your payoff is
+            Usted no se ofreció de voluntario, pero alguien lo hizo. Como resultado, su pago es de
             <strong>{{ player.payoff }}</strong>.
         {% else %}
-            You did not volunteer and no one did. As a result, your payoff is
+            Usted no se ofreció de voluntario, y nadie más lo hizo. Como resultado, su pago es de
             <strong>{{ player.payoff }}</strong>.
         {% endif %}
     </p>
