@@ -2,15 +2,15 @@
 {% load otree %}
 
 {% block title %}
-    Production (Period {{ subsession.round_number }} of {{ Constants.num_rounds }})
+    Producción (Periodo {{ subsession.round_number }} de {{ Constants.num_rounds }})
 {% endblock %}
 
 {% block content %}
 
-    <p>You are {{ player.role }}</p>
+    <p>Usted es {{ player.role }}</p>
 
-    {% formfield player.seller_proposed_quality label='What quality grade do you want to produce?' %}
-    {% formfield player.seller_proposed_price label='What price do you want to sell at?' %}
+    {% formfield player.seller_proposed_quality label='¿Qué grado de calidad usted desea producir?' %}
+    {% formfield player.seller_proposed_price label='¿A qué precio usted desea venderlo?' %}
 
     {% next_button %}
     {% include Constants.instructions_template %}
