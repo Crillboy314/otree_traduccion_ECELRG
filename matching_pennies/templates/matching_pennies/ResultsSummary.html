@@ -2,7 +2,7 @@
 {% load otree %}
 
 {% block title %}
-    Final results
+    Resultados finales
 {% endblock %}
 
 {% block content %}
@@ -10,19 +10,19 @@
     <table class="table">
         <tr>
             <th>Round</th>
-            <th>Player and outcome</th>
+            <th>Jugador y resultado</th>
         </tr>
         {% for p in player_in_all_rounds %}
             <tr>
                 <td>{{ p.round_number }}</td>
-                <td>You were the {{ p.role }} and {% if p.is_winner %} won {% else %} lost {% endif %}</td>
+                <td>Usted fue el {{ p.role }} y {% if p.is_winner %} ganó {% else %} perdió {% endif %}</td>
             </tr>
         {% endfor %}
     </table>
 
     <p>
-        The paying round was {{ paying_round }}.
-        Your total payoff is therefore {{ total_payoff }}.
+        La ronda de pago fue la {{ paying_round }}.
+        Por lo tanto su pago total es {{ total_payoff }}. 
     </p>
 
 
