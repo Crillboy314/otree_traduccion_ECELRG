@@ -2,17 +2,17 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 {% block content %}
     <p>
 
         {% if player.id_in_group == 1 %}
-            You decided to keep <strong>{{ group.kept }}</strong> for yourself.
+            Usted decidió mantener <strong>{{ group.kept }}</strong> para usted.
         {% else %}
-            Participant 1 decided to keep <strong>{{ group.kept }}</strong>, so
-            you got <strong>{{ offer }}</strong>.
+            Participante 1 decidió mantener <strong>{{ group.kept }}</strong>, 
+        entonces usted obtiene <strong>{{ offer }}</strong>.
         {% endif %}
 
         {% next_button %}
