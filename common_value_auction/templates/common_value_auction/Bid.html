@@ -2,18 +2,18 @@
 {% load otree %}
 
 {% block title %}
-    Bid
+    Oferta
 {% endblock %}
 
 {% block content %}
 
     <p>
-        The value of the item is estimated to be {{ player.item_value_estimate }}.
-        This estimate may deviate from the actual value by at most {{ Constants.estimate_error_margin }}.
+        Se estima que el valor del artículo es {{ player.item_value_estimate }}.
+        Esta estimación puede desviarse del valor real por un máximo de {{ Constants.estimate_error_margin }}.
     </p>
 
     <p>
-        Please make your bid now. The amount can be between {{ Constants.min_allowable_bid }} and {{ Constants.max_allowable_bid }}, inclusive.
+        Por favor haz tu oferta ahora. El monto puede estar desde {{ Constants.min_allowable_bid }} hasta {{ Constants.max_allowable_bid }}, incluido.
     </p>
 
     {% formfield player.bid_amount label="Bid amount" %}
