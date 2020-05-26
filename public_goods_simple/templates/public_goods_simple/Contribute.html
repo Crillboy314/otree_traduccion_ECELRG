@@ -8,14 +8,14 @@
 {% block content %}
 
     <p>
-        This is a public goods game with
-        {{ Constants.players_per_group }} players per group,
-        an endowment of {{ Constants.endowment }},
-        and an efficiency factor of {{ Constants.multiplier }}.
+        Este es un juego de bienes públicos con
+        {{ Constants.players_per_group }} jugadores por grupo,
+        un capital de {{ Constants.endowment }},
+        y un factor de eficiencia de {{ Constants.multiplier }}.
     </p>
 
 
-    {% formfield player.contribution label="How much will you contribute?" %}
+    {% formfield player.contribution label="¿Cuánto contribuirás?" %}
 
     {% next_button %}
 
