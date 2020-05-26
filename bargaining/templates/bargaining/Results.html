@@ -2,26 +2,26 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 
 {% block content %}
     <table class=table style="width: auto">
         <tr>
-            <th>You demanded</th>
+            <th>Usted demandó</th>
             <td>{{ player.request }}</td>
         </tr>
         <tr>
-            <th>The other participant demanded</th>
+            <th>El otro jugador demandó</th>
             <td>{{ other_player_request }}</td>
         </tr>
         <tr>
-            <th>Sum of your demands</th>
+            <th>Suma de demandas</th>
             <td>{{ group.total_requests }}</td>
         </tr>
         <tr>
-            <th>Thus you earn</th>
+            <th>Así, usted ganó</th>
             <td>{{ player.payoff }}</td>
         </tr>
     </table>
