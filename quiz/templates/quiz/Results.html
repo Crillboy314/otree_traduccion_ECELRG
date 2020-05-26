@@ -2,22 +2,22 @@
 {% load otree %}
 
 {% block title %}
-    Results
+    Resultados
 {% endblock %}
 
 {% block content %}
 
     <p>
-        You answered {{ questions_correct }} out of {{ Constants.num_rounds }}
-        questions correctly.
+        Usted respondió {{ questions_correct }} de {{ Constants.num_rounds }}
+        preguntas correctamente.
     </p>
 
     <table class="table">
         <tr>
-            <th>Question</th>
-            <th>Your answer</th>
-            <th>Correct answer</th>
-            <th>Answered correctly?</th>
+            <th>Pregunta</th>
+            <th>Su respuesta</th>
+            <th>Respuesta correcta</th>
+            <th>¿Respondió correctamente?</th>
         </tr>
         {% for p in player_in_all_rounds %}
             <tr>
