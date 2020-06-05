@@ -5,9 +5,10 @@ from otree.api import (
 
 
 doc = """
-This bargaining game involves 2 players. Each demands for a portion of some
-available amount. If the sum of demands is no larger than the available
-amount, both players get demanded portions. Otherwise, both get nothing.
+Este juego de negociación involucra a 2 jugadores. Cada uno exige 
+una porción de alguna cantidad disponible. Si la suma de las 
+demandas no es mayor que la cantidad disponible, ambos jugadores reciben
+porciones demandadas. De lo contrario, ambos no obtienen nada.
 """
 
 
@@ -42,7 +43,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     request = models.CurrencyField(
         doc="""
-        Amount requested by this player.
+        Cantidad solicitada por el jugador.
         """,
         min=0, max=Constants.amount_shared
     )
