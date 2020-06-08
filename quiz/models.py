@@ -4,14 +4,14 @@ from otree.api import (
 )
 import csv
 
-author = 'Your name here'
+author = 'Su nombre va aquí'
 
 doc = """
-A quiz app that reads its questions from a spreadsheet
-(see quiz.csv in this directory).
-There is 1 question per page; the number of pages in the game
-is determined by the number of questions in the CSV.
-See the comment below about how to randomize the order of pages.
+Una aplicación de cuestionario que lee sus preguntas de una hoja de cálculo 
+(consulte quiz.csv en este directorio).
+Hay 1 pregunta por página; el número de páginas en el juego
+está determinado por el número de preguntas en el CSV. 
+Vea el comentario a continuación sobre cómo aleatorizar el orden de las páginas.
 """
 
 
@@ -30,15 +30,15 @@ class Subsession(BaseSubsession):
         if self.round_number == 1:
             self.session.vars['questions'] = Constants.questions.copy()
             ## ALTERNATIVE DESIGN:
-            ## to randomize the order of the questions, you could instead do:
+            ## para aleatorizar el orden de las preguntas, en su lugar podría hacer:
 
             # import random
             # randomized_questions = random.sample(Constants.questions, len(Constants.questions))
             # self.session.vars['questions'] = randomized_questions
 
-            ## and to randomize differently for each participant, you could use
-            ## the random.sample technique, but assign into participant.vars
-            ## instead of session.vars.
+            ## y para aleatorizar de manera diferente para cada participante, podría utilizar
+            ## la técnica random.sample, pero asignar a participant.vars 
+            ##En lugar de session.vars.
 
         for p in self.get_players():
             question_data = p.current_question()
