@@ -6,10 +6,9 @@ import random
 
 
 doc = """
-One player decides how to divide a certain amount between himself and the other
-player.
+Un jugador decide cómo dividir una cierta cantidad entre él y el otro Jugador.
 
-See: Kahneman, Daniel, Jack L. Knetsch, and Richard H. Thaler. "Fairness
+Revisar: Kahneman, Daniel, Jack L. Knetsch, and Richard H. Thaler. "Fairness
 and the assumptions of economics." Journal of business (1986):
 S285-S300.
 
@@ -33,7 +32,7 @@ class Subsession(BaseSubsession):
 
 class Group(BaseGroup):
     kept = models.CurrencyField(
-        doc="""Amount dictator decided to keep for himself""",
+        doc="""Cantidad que Dictador decidió mantener para sí mismo""",
         min=0, max=Constants.endowment,
     )
 
