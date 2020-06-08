@@ -4,12 +4,12 @@ from .models import Constants
 
 
 class Introduction(Page):
-    """Description of the game: How to play and returns expected"""
+    """Descripción del juego: Cómo jugar y devoluciones esperadas"""
     pass
 
 
 class Contribute(Page):
-    """Player: Choose how much to contribute"""
+    """Jugador: Elige cuánto contribuir"""
 
     form_model = 'player'
     form_fields = ['contribution']
@@ -19,11 +19,11 @@ class ResultsWaitPage(WaitPage):
     def after_all_players_arrive(self):
         self.group.set_payoffs()
 
-    body_text = "Waiting for other participants to contribute."
+    body_text = "A la espera de que otros participantes contribuyan."
 
 
 class Results(Page):
-    """Players payoff: How much each has earned"""
+    """Pago de los jugadores: Cuánto ha ganado cada uno"""
 
     def vars_for_template(self):
         return {
