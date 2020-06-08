@@ -5,7 +5,7 @@ from otree.api import (
 import random
 
 doc = """
-This is a one-period public goods game with 3 players.
+Este es un juego de bienes públicos de un período con 3 jugadores.
 """
 
 
@@ -53,5 +53,5 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     contribution = models.CurrencyField(
         min=0, max=Constants.endowment,
-        doc="""The amount contributed by the player""",
+        doc="""La cantidad aportada por el jugador""",
     )
