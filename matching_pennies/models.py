@@ -6,7 +6,7 @@ import random
 
 
 doc = """
-A demo of how rounds work in oTree, in the context of 'matching pennies'
+Una demostración de cómo funcionan las rondas en oTree, en el contexto de 'coincidencia de centavos'
 """
 
 
