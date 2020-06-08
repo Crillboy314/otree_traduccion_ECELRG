@@ -7,10 +7,10 @@ from otree.api import (
 doc = """
 a.k.a. Keynesian beauty contest.
 
-Players all guess a number; whoever guesses closest to
-2/3 of the average wins.
+Todos los jugadores adivinan un número; quien 
+adivine el número más cercano a 2/3 del promedio gana.
 
-See https://en.wikipedia.org/wiki/Guess_2/3_of_the_average
+Revisar en https://en.wikipedia.org/wiki/Guess_2/3_of_the_average
 """
 
 
